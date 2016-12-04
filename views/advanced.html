@@ -1,0 +1,274 @@
+<!--
+ * CoreUI - Open Source Bootstrap Admin Template
+ * @version v1.0.0-alpha.2
+ * @link http://coreui.io
+ * Copyright (c) 2016 creativeLabs Łukasz Holeczek
+ * @license MIT
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>AVA Tutor Inteligente</title>
+
+    <!-- Icons -->
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="/css/style.css" rel="stylesheet">
+
+</head>
+
+<!-- BODY options, add following classes to body to change options
+    1. 'compact-nav'     	  - Switch sidebar to minified version (width 50px)
+    2. 'sidebar-nav'		  - Navigation on the left
+      2.1. 'sidebar-off-canvas'	- Off-Canvas
+        2.1.1 'sidebar-off-canvas-push'	- Off-Canvas which move content
+        2.1.2 'sidebar-off-canvas-with-shadow'	- Add shadow to body elements
+    3. 'fixed-nav'			  - Fixed navigation
+    4. 'navbar-fixed'		  - Fixed navbar
+    5. 'footer-fixed'		  - Fixed navbar
+  -->
+
+<body class="navbar-fixed sidebar-nav fixed-nav">
+    <header class="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">☰</button>
+            <a class="" href="#"></a>
+            <ul class="nav navbar-nav hidden-md-down">
+                <li class="nav-item">
+                    <a class="nav-link navbar-toggler layout-toggler" href="#">☰</a>
+                </li>
+                <li class="nav-item p-x-1">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item p-x-1">
+                    <a class="nav-link" href="#">Users</a>
+                </li>
+                <li class="nav-item p-x-1">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav pull-right hidden-md-down">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="icon-bell"></i><span class="tag tag-pill tag-danger">5</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="icon-list"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="icon-location-pin"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <img src="/img/avatars/7.jpg" class="img-avatar" alt="admin@bootstrapmaster.com">
+                        <span class="hidden-md-down">admin</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header text-xs-center">
+                            <strong>Sua conta</strong>
+                        </div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-envelope-o"></i> Mensagens<span class="tag tag-success">2</span></a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-tasks"></i> Atividades<span class="tag tag-danger">11</span></a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-comments"></i> Fórum<span class="tag tag-warning">8</span></a>
+                        <div class="dropdown-header text-xs-center">
+                            <strong>Configurações</strong>
+                        </div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Perfil</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i>Configurações</a>
+
+                        <div class="divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="sidebar">
+
+
+
+
+
+
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-area-chart fa-lg m-t-2" id="areaChart"></i> Banco de questões</a>
+                </li>
+
+                 <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-eye"></i>
+                      Visualizar Turma
+                        </a>
+
+                        <ul class="nav-dropdown-items">
+
+                            <li class="nav-item ">
+                                <a class="nav-link" href="grades.html">
+                                   Notas
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item active bd-sidenav-active">
+                                <a class="nav-link" href="usage.html">
+                                    Uso do sistema
+                                </a>
+
+
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="advanced.html">
+                                   Acompanhamento Avançado
+                                </a>
+
+
+                            </li>
+                </ul>
+                    </li>
+                       <li class="nav-item">
+                                <a class="nav-link" href="home.html"><i class="fa fa-archive fa-lg m-t-2" id="areaChart"></i> Disciplinas</a>
+                    </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <main class="main">
+
+
+        <div class="container-fluid">
+            <h1 class="page-title">Acompanhamento avançado</h1>
+
+            <nav class="navbar navbar-dark bg-inverse">
+              <div class="nav navbar-nav">
+
+
+               <!-- <a class="nav-item nav-link active" href="#">Acessos Semanais <span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link" >Interações individuais</a>
+               <a class="nav-item nav-link" >Interações em grupo</a>
+               <a class="nav-item nav-link" >Aulas assistidas</a>
+               <a class="nav-item nav-link" href="#">Média de acerto em questões</a> -->
+
+          </div>
+          </nav>
+            <div class="card-columns col-2">
+
+                <div class="card">
+                    <div class="card-header">
+                      Acessos semanais
+                        <div class="card-actions">
+                            <a href="http://www.chartjs.org">
+                                <small class="text-muted">docs</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                            <canvas id="canvas-5" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Acessos semanais
+                        <div class="card-actions">
+                            <div class="input-group">
+
+                                            <span class="input-group-btn" id="search-std">
+                                                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Buscar aluno</button>
+                                            </span>
+                                            <input type="text" id="input1-group2" name="input1-group2" class="form-control" placeholder="Nome ou Email">
+                                        </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                            <canvas id="canvas-3" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Acessos semanais
+                        <div class="card-actions">
+                            <a href="http://www.chartjs.org">
+                                <small class="text-muted">docs</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                            <canvas id="canvas-4" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        Evolução de notas
+                        <div class="card-actions">
+                            <a href="http://www.chartjs.org">
+                                <small class="text-muted">docs</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                            <canvas id="canvas-6" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <span class="text-left">
+            <a href="http://coreui.io">CoreUI</a> © 2016 creativeLabs.
+        </span>
+        <span class="float-xs-right">
+            Powered by <a href="http://coreui.io">CoreUI</a>
+        </span>
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/bower_components/pace/pace.min.js"></script>
+    <script src="/bower_components/chart.js/dist/Chart.min.js"></script>
+
+
+    <!-- GenesisUI main scripts -->
+
+    <script src="/js/app.js"></script>
+    <script src="/js/usage.js"></script>
+
+
+
+    <!-- Plugins and scripts required by this views -->
+
+
+</body>
+
+</html>
