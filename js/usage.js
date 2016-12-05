@@ -8,7 +8,6 @@
 						boxChart.setTitle({text: currentFilter});
 
 						boxChart.xAxis[0].setTitle({text: currentFilter});
-					
 
 						boxChart.redraw();
 
@@ -49,7 +48,8 @@
 								myDataset.label = myLabels.lessonsText;
 									break;
 									case "Média de acerto em questões":
-										//	code block
+									myDataset.data = myLabels.avarageLabel;
+									myDataset.label = myLabels.avarageLabelText;
 								break;
 						}
 						return myDataset;
@@ -63,8 +63,9 @@
 					groupItLabel : ["0-2","3-4","5-6","7-8"],
 					lessonsLabel : ["Aula 01", "Aula 02", "Aula 03", "Aula 04"],
 					lessonsText : "Quantidade de alunos",
-					historyLabel : ["Domingo", "Segunda", "Terça", "Quarta", "Quinta","Sexta"]
-
+					historyLabel : ["Domingo", "Segunda", "Terça", "Quarta", "Quinta","Sexta"],
+					avarageLabel : ["0 - 2.5","2.6 - 5 ","5.1 - 7.5","7.5 - 10" ],
+					avarageLabelText : "Pontuação"
 				}
 
 
