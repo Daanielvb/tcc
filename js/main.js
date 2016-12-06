@@ -19,7 +19,7 @@
 		localStorage.setItem("disciplineStart",data.start);
 		localStorage.setItem("disciplineEnd",data.end);
 		localStorage.setItem("status",data.status);
-		window.location = "/index.html";
+		window.location = "/views/index.html";
 	};
 
 
@@ -38,12 +38,24 @@
 		}
 	};
 
+	$("#home-boxes .card").click(function(){
+	  var page = ($(this).attr('id'));
+		if(page == "students"){
+			window.location = "/views/advanced.html";
+		}
+		else if (page == "status"){
+			window.location = "/views/grades.html"
+		}
+	else{
 
-	if(window.location.pathname == "/index.html"){
+	}
+	})
+
+	if(window.location.pathname == "/views/index.html"){
 		loadDisciplineData();
 	}
 
-	var randomScalingFactor = function(){ 
+	var randomScalingFactor = function(){
 		return Math.round(Math.random()*10)
 	};
 
@@ -87,7 +99,7 @@
 	            }
 	        ]
 	    }
-	    
+
 	    var lineChartData = {
 	        labels : ['Atividade 1','Atividade 2','Atividade 3','Atividade 4'],
 	        datasets : [
@@ -113,8 +125,8 @@
 	    var lineChart = document.getElementById('canvas-3');
 	    var barChart = document.getElementById('canvas-4');
 	    var pieChart = document.getElementById('canvas-5');
-	    
-	    
+
+
 	    if(pieChart != undefined){
 		    var chart = new Chart(pieChart, {
 		        type: 'pie',

@@ -7706,3 +7706,17 @@ base-chart.chart {
 
 table {
   color: black; }
+
+.login {
+  left: 15%; }
+
+#entrar {
+  margin-top: 1em; }
+
+#home-boxes .card:hover {
+  cursor: pointer;
+  padding: 0.25em;
+  background-color: #f2f2f2; }
+
+.page-link, .pagination-datatables li a, .pagination li a {
+  color: #167495; }

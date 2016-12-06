@@ -165,13 +165,68 @@
                                      <i class="fa fa-align-justify"></i> Alunos da disciplina
                                  </div>
                                  <div class="card-block">
-                                     <table class="table table-bordered table-striped table-condensed">
+                                     <table class="table table-bordered table-striped table-condensed" id="table-1" onclick="show(2)" >
                                          <thead>
                                              <tr>
                                                  <th>Aluno</th>
                                                  <th>Último acesso</th>
                                                  <th>Role</th>
-                                                 <th>Status</th>
+                                                 <th>Indicadores</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td>André Raul Farias</td>
+                                                 <td>05/12/2016 19:30</td>
+                                                 <td>Member</td>
+                                                 <td>
+                                                     <span class="tag tag-success">Regular</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Anna Manuela Santana</td>
+                                                 <td>09/12/2016 07:30</td>
+                                                 <td>Staff</td>
+                                                 <td>
+                                                     <span class="tag tag-danger">Evasão</span>
+                                                     <span class="tag tag-warning">Atenção</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Bruno Rafael Tavares</td>
+                                                 <td>11/12/2016 12:22</td>
+                                                 <td>Admin</td>
+                                                 <td>
+                                                     <span class="tag tag-default">Comportamento atípico</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Carlos Henrique</td>
+                                                 <td>05/12/2016 22:41</td>
+                                                 <td>Member</td>
+                                                 <td>
+                                                     <span class="tag tag-warning">Atenção</span>
+                                                      <span class="tag tag-default">Comportamento atípico</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Camilla Souza</td>
+                                                 <td>05/12/2016 08:00</td>
+                                                 <td>Staff</td>
+                                                 <td>
+                                                     <span class="tag tag-success">Regular</span>
+                                                 </td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+
+                                     <table class="table table-bordered table-striped table-condensed" id="table-2" style="display:none;">
+                                         <thead>
+                                             <tr>
+                                                 <th>Aluno</th>
+                                                 <th>Último acesso</th>
+                                                 <th>Role</th>
+                                                 <th>Indicadores</th>
                                              </tr>
                                          </thead>
                                          <tbody>
@@ -184,11 +239,123 @@
                                                  </td>
                                              </tr>
                                              <tr>
-                                                 <td>Aline Rocha</td>
+                                                 <td>Eliana Silva</td>
                                                  <td>09/12/2016 07:30</td>
                                                  <td>Staff</td>
                                                  <td>
                                                      <span class="tag tag-danger">Evasão</span>
+                                                     <span class="tag tag-warning">Atenção</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Fernando Miguel</td>
+                                                 <td>11/12/2016 12:22</td>
+                                                 <td>Admin</td>
+                                                 <td>
+                                                     <span class="tag tag-default">Comportamento atípico</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Felipe Souza Filho</td>
+                                                 <td>05/12/2016 22:41</td>
+                                                 <td>Member</td>
+                                                 <td>
+                                                     <span class="tag tag-warning">Atenção</span>
+                                                      <span class="tag tag-default">Comportamento atípico</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Geraldo Astolfo</td>
+                                                 <td>05/12/2016 08:00</td>
+                                                 <td>Staff</td>
+                                                 <td>
+                                                     <span class="tag tag-success">Regular</span>
+                                                 </td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+
+                                     <table class="table table-bordered table-striped table-condensed" id="table-3" style="display:none;">
+                                         <thead>
+                                             <tr>
+                                                 <th>Aluno</th>
+                                                 <th>Último acesso</th>
+                                                 <th>Role</th>
+                                                 <th>Indicadores</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td>Homer simpson</td>
+                                                 <td>05/12/2016 19:30</td>
+                                                 <td>Member</td>
+                                                 <td>
+                                                     <span class="tag tag-success">Regular</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Igor Pedrosa</td>
+                                                 <td>09/12/2016 07:30</td>
+                                                 <td>Staff</td>
+                                                 <td>
+                                                     <span class="tag tag-danger">Evasão</span>
+                                                     <span class="tag tag-warning">Atenção</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>João Carlos Fonseca</td>
+                                                 <td>11/12/2016 12:22</td>
+                                                 <td>Admin</td>
+                                                 <td>
+                                                     <span class="tag tag-default">Comportamento atípico</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>José Araújo</td>
+                                                 <td>05/12/2016 22:41</td>
+                                                 <td>Member</td>
+                                                 <td>
+                                                     <span class="tag tag-warning">Atenção</span>
+                                                      <span class="tag tag-default">Comportamento atípico</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Lenine Fraga</td>
+                                                 <td>05/12/2016 08:00</td>
+                                                 <td>Staff</td>
+                                                 <td>
+                                                     <span class="tag tag-success">Regular</span>
+                                                 </td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+
+
+                                     <table class="table table-bordered table-striped table-condensed" id="table-4" style="display:none;">
+                                         <thead>
+                                             <tr>
+                                                 <th>Aluno</th>
+                                                 <th>Último acesso</th>
+                                                 <th>Role</th>
+                                                 <th>Indicadores</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td>Maria da Rocha</td>
+                                                 <td>05/12/2016 19:30</td>
+                                                 <td>Member</td>
+                                                 <td>
+                                                     <span class="tag tag-success">Regular</span>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>Marta Camelo</td>
+                                                 <td>09/12/2016 07:30</td>
+                                                 <td>Staff</td>
+                                                 <td>
+                                                     <span class="tag tag-danger">Evasão</span>
+                                                     <span class="tag tag-warning">Atenção</span>
                                                  </td>
                                              </tr>
                                              <tr>
@@ -200,15 +367,16 @@
                                                  </td>
                                              </tr>
                                              <tr>
-                                                 <td>William Shakespeare</td>
+                                                 <td>Nara Maria Wanderley</td>
                                                  <td>05/12/2016 22:41</td>
                                                  <td>Member</td>
                                                  <td>
                                                      <span class="tag tag-warning">Atenção</span>
+                                                      <span class="tag tag-default">Comportamento atípico</span>
                                                  </td>
                                              </tr>
                                              <tr>
-                                                 <td>Marie Currie</td>
+                                                 <td>Otávio Carapuceiro</td>
                                                  <td>05/12/2016 08:00</td>
                                                  <td>Staff</td>
                                                  <td>
@@ -217,16 +385,15 @@
                                              </tr>
                                          </tbody>
                                      </table>
+
                                      <nav>
                                          <ul class="pagination">
-                                             <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                                             <li class="page-item active">
+                                             <li class="page-item active" onclick="showTable(1)">
                                                  <a class="page-link" href="#">1</a>
                                              </li>
-                                             <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                             <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                             <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                             <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                             <li class="page-item"  onclick="showTable(2)"><a style="color:#167495" class="page-link">2</a></li>
+                                             <li class="page-item" onclick="showTable(3)"><a style="color:#167495" class="page-link">3</a></li>
+                                             <li class="page-item" onclick="showTable(4)"><a style="color:#167495" class="page-link" >4</a></li>
                                          </ul>
                                      </nav>
                                  </div>
@@ -239,72 +406,7 @@
           </nav>
             <div class="card-columns col-2">
 
-                <div class="card">
-                    <div class="card-header">
-                      Acessos semanais
-                        <div class="card-actions">
-                            <a href="http://www.chartjs.org">
-                                <small class="text-muted">+</small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-block">
-                        <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-                            <canvas id="canvas-5" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        Acessos semanais
-                        <div class="card-actions">
-                            <div class="input-group">
 
-                                            <span class="input-group-btn" id="search-std">
-                                                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Buscar aluno</button>
-                                            </span>
-                                            <input type="text" id="input1-group2" name="input1-group2" class="form-control" placeholder="Nome ou Email">
-                                        </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-block">
-                        <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-                            <canvas id="canvas-3" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        Acessos semanais
-                        <div class="card-actions">
-                            <a href="http://www.chartjs.org">
-                                <small class="text-muted">docs</small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-block">
-                        <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-                            <canvas id="canvas-4" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        Evolução de notas
-                        <div class="card-actions">
-                            <a href="http://www.chartjs.org">
-                                <small class="text-muted">docs</small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card-block">
-                        <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-                            <canvas id="canvas-6" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
@@ -333,13 +435,29 @@
     <!-- GenesisUI main scripts -->
 
     <script src="/js/app.js"></script>
-    <script src="/js/usage.js"></script>
+
 
 
 
     <!-- Plugins and scripts required by this views -->
 
+    <script>
 
+    var showTable = function(table){
+      $("table").fadeOut();
+      if(table - 1 != 0){
+        //TODO - Ajustar transição da navegaçao
+      //  $(".pagination li").get(table - 1).className = "page-item";
+      //$(".pagination li").get(table - 2).className = "page-item active";
+      }
+      else{
+      //  $(".pagination li").get(0).className = "page-item active";
+      //  $(".pagination li").get(3).className = "page-item";
+      }
+      $("#table-" + table.toString()).fadeIn();
+    };
+
+    </script>
 </body>
 
 </html>
