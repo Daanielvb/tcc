@@ -145,34 +145,7 @@
 				            }
 				        ]
 				    }
-				    var lineChart = document.getElementById('canvas-3');
-				    var barChart = document.getElementById('canvas-4');
-				    var pieChart = document.getElementById('canvas-5');
 
-
-					    var chart = new Chart(pieChart, {
-					        type: 'pie',
-					        data: pieData,
-					        options: {
-					            responsive: true
-					        }
-					    });
-
-					    var chart2 = new Chart(barChart, {
-				        type: 'bar',
-				        data: barChartData,
-				        options: {
-				            responsive: true
-				        }
-				    });
-
-					    var chart3 = new Chart(lineChart, {
-				        type: 'line',
-				        data: lineChartData,
-				        options: {
-				            responsive: true
-				        }
-				    });
 
 
 						var updateCharts = function(myData){
@@ -219,10 +192,47 @@
 				            responsive: true
 				        }
 				    });
+
+
+
+						$("#canvas-5").click(
+						    function(evt){
+									var activePoints = chart.getElementsAtEvent(evt);
+							    if(activePoints.length > 0){
+							      var clickedElementindex = activePoints[0]["_index"];
+							      var label = chart.data.labels[clickedElementindex];
+							      var value = chart.data.datasets[0].data[clickedElementindex];
+										console.log(value);
+										console.log(label);
+										console.log(clickedElementindex);
+										//TODO: ABRIR MODAL AQUI
+							      
+							   }
+						    }
+						);
+
+						$("#canvas-4").click(
+						    function(evt){
+									var activePoints = chart2.getElementsAtEvent(evt);
+							    if(activePoints.length > 0){
+							      var clickedElementindex = activePoints[0]["_index"];
+							      var label = chart.data.labels[clickedElementindex];
+							      var value = chart.data.datasets[0].data[clickedElementindex];
+										console.log(value);
+										console.log(label);
+										console.log(clickedElementindex);
+										//TODO: ABRIR MODAL AQUI
+							      /* other stuff that requires slice's label and value */
+							   }
+						    }
+						);
+
+
 						}
 
 				// $(function () {
 
+				updateCharts(pickUpLabel("Acessos semanais"));
 
 					var options = {
 				      chart: {
