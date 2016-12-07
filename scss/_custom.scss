@@ -128,6 +128,11 @@ table {
 	display:none;
 }
 
-#block-two,#block-three{
+#block-one,#block-two,#block-three{
 	display:none;
+
+	:hover{
+		cursor:pointer;
+		opacity:0.8;
+	}
 }

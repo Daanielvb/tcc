@@ -1,4 +1,5 @@
 $("#classificar").click(function() {
+    $("#classification-content").hide();
     $(".loader").fadeIn('slow');
     var filters = $('.form-check-input:checkbox:checked');
     var result = "";
@@ -20,15 +21,25 @@ $("#classificar").click(function() {
 var showResultData = function(data) {
   var boxNumber = data.length;
   insertBoxes(data);
-  $(".classification-content").html();
   setTimeout(function(){
       $(".loader").fadeOut('slow');
       $("#classification-content").fadeIn('slow');
-  },1000);
+  },2000);
 
 }
 
 var insertBoxes = function(data){
+  $("#block-one").show();
+  $("#data-one").text(data[0]);
+  if(data.length > 1){
+      $("#block-two").show();
+      $("#data-two").text(data[1]);
+  }
+  if(data.length > 2){
+      console.log("aqui");
+      $("#block-three").show();
+      $("#data-three").text(data[2]);
+  }
 
 }
 //EM result

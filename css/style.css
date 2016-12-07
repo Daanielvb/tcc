@@ -7787,3 +7787,9 @@ table {
 
 #classification-content {
   display: none; }
+
+#block-one, #block-two, #block-three {
+  display: none; }
+  #block-one :hover, #block-two :hover, #block-three :hover {
+    cursor: pointer;
+    opacity: 0.8; }
