@@ -23,7 +23,9 @@
             <!-- Icons -->
             <link href="/css/font-awesome.min.css" rel="stylesheet">
             <link href="/css/simple-line-icons.css" rel="stylesheet">
-
+            <script src="/js/highcharts.js"></script>
+            <script src="/js/highcharts-more.js"></script>
+            <script src="/js/exporting.js"></script>
             <!-- Main styles for this application -->
             <link href="/css/style.css" rel="stylesheet">
 
@@ -88,7 +90,6 @@
                     </ul>
                 </div>
             </header>
-
             <div class="sidebar">
 
 
@@ -210,7 +211,7 @@
                             </div>
                             <div class="card-block">
                                 <div class="chart-wrapper"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-                                    <canvas id="canvas-6" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
+                                    <div id="container" ></div>
                                 </div>
                             </div>
                         </div>

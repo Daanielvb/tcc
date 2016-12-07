@@ -95,10 +95,11 @@
 	                borderColor : 'rgba(151,187,205,0.8)',
 	                highlightFill : 'rgba(151,187,205,0.75)',
 	                highlightStroke : 'rgba(151,187,205,1)',
-	                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
+	                data : [10,9,12,10,2]
 	            }
 	        ]
 	    }
+
 
 	    var lineChartData = {
 	        labels : ['Atividade 1','Atividade 2','Atividade 3','Atividade 4'],
@@ -152,4 +153,82 @@
 	        }
 	    });
 	    }
+
+			var options = {
+					chart: {
+							renderTo: 'container',
+							type: 'boxplot'
+					},
+
+					title: {
+							text: 'Gráfico de caixa'
+					},
+
+					legend: {
+							enabled: false
+					},
+
+
+
+					xAxis: {
+							categories: ['1', '2', '3', '4', '5'],
+							title: {
+									text: 'Média das atividades'
+							}
+					},
+
+					yAxis: {
+							title: {
+									text: 'Quantidade'
+							},
+							plotLines: [{
+									value: 4,
+									color: 'red',
+									width: 1,
+									label: {
+											text: 'Média: 4',
+											align: 'center',
+											style: {
+													color: 'gray'
+											}
+									}
+							}]
+					},
+
+					series: [{
+							name: 'Observations',
+							data: [
+									[10, 13, 20, 25, 30],
+									[10, 13, 20, 25, 30],
+									[10, 13, 20, 25, 30],
+									[10, 13, 20, 25, 30],
+									[10, 13, 20, 25, 30]
+							],
+							tooltip: {
+									headerFormat: '<em>Experiment No {point.key}</em><br/>'
+							}
+					}, {
+							name: 'Outlier',
+							color: Highcharts.getOptions().colors[0],
+							type: 'scatter',
+							data: [ // x, y positions where 0 is the first category
+									[0, 10],
+									[4, 20],
+									[4, 10],
+									[4, 15]
+							],
+							marker: {
+									fillColor: 'white',
+									lineWidth: 1,
+									lineColor: Highcharts.getOptions().colors[0]
+							},
+							tooltip: {
+									pointFormat: 'Observation: {point.y}'
+							}
+					}]
+				}
+
+
+			var boxChart = new Highcharts.Chart(options);
+
 	});

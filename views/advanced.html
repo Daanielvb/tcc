@@ -49,15 +49,6 @@
                 <li class="nav-item">
                     <a class="nav-link navbar-toggler layout-toggler" href="#">☰</a>
                 </li>
-                <li class="nav-item p-x-1">
-                    <a class="nav-link" href="#">Dashboard</a>
-                </li>
-                <li class="nav-item p-x-1">
-                    <a class="nav-link" href="#">Users</a>
-                </li>
-                <li class="nav-item p-x-1">
-                    <a class="nav-link" href="#">Settings</a>
-                </li>
             </ul>
             <ul class="nav navbar-nav pull-right hidden-md-down">
                 <li class="nav-item">
@@ -158,13 +149,34 @@
                                  <div class="card-header" style="color:black;">
                                      <i class="fa fa-align-justify"></i> Alunos da disciplina
                                  </div>
+
                                  <div class="card-block">
-                                     <table class="table table-bordered table-striped table-condensed" id="table-1" onclick="show(2)" >
+                                   <label class="switch switch-icon switch-pill switch-secondary">
+                                       <input type="checkbox" class="switch-input" checked="">
+                                       <span class="switch-label" data-on="" data-off=""></span>
+                                       <span class="switch-handle"></span>
+                                   </label>
+                                  <label class="switch switch-icon switch-pill switch-danger">
+                                        <input type="checkbox" class="switch-input" checked="">
+                                        <span class="switch-label" data-on="" data-off=""></span>
+                                        <span class="switch-handle"></span>
+                                    </label>
+                                    <label class="switch switch-icon switch-pill switch-success">
+                                      <input type="checkbox" class="switch-input" checked="">
+                                      <span class="switch-label" data-on="" data-off=""></span>
+                                      <span class="switch-handle"></span>
+                                  </label>
+                                  <label class="switch switch-icon switch-pill switch-warning">
+                                      <input type="checkbox" class="switch-input" checked="">
+                                      <span class="switch-label" data-on="" data-off=""></span>
+                                      <span class="switch-handle"></span>
+                                  </label>
+                                     <table class="table table-bordered table-striped table-condensed" id="table-1" >
                                          <thead>
                                              <tr>
                                                  <th>Aluno</th>
                                                  <th>Último acesso</th>
-                                                 <th>Role</th>
+                                                 <th>Média</th>
                                                  <th>Indicadores</th>
                                              </tr>
                                          </thead>
@@ -172,7 +184,7 @@
                                              <tr>
                                                  <td>André Raul Farias</td>
                                                  <td>05/12/2016 19:30</td>
-                                                 <td>Member</td>
+                                                 <td>6.0</td>
                                                  <td>
                                                      <span class="tag tag-success">Regular</span>
                                                  </td>
@@ -180,7 +192,7 @@
                                              <tr>
                                                  <td>Anna Manuela Santana</td>
                                                  <td>09/12/2016 07:30</td>
-                                                 <td>Staff</td>
+                                                 <td>4.2</td>
                                                  <td>
                                                      <span class="tag tag-danger">Evasão</span>
                                                      <span class="tag tag-warning">Atenção</span>
@@ -189,7 +201,7 @@
                                              <tr>
                                                  <td>Bruno Rafael Tavares</td>
                                                  <td>11/12/2016 12:22</td>
-                                                 <td>Admin</td>
+                                                 <td>7.9</td>
                                                  <td>
                                                      <span class="tag tag-default">Comportamento atípico</span>
                                                  </td>
@@ -197,7 +209,7 @@
                                              <tr>
                                                  <td>Carlos Henrique</td>
                                                  <td>05/12/2016 22:41</td>
-                                                 <td>Member</td>
+                                                 <td>0</td>
                                                  <td>
                                                      <span class="tag tag-warning">Atenção</span>
                                                       <span class="tag tag-default">Comportamento atípico</span>
@@ -206,7 +218,7 @@
                                              <tr>
                                                  <td>Camilla Souza</td>
                                                  <td>05/12/2016 08:00</td>
-                                                 <td>Staff</td>
+                                                 <td>5.6</td>
                                                  <td>
                                                      <span class="tag tag-success">Regular</span>
                                                  </td>
@@ -219,7 +231,7 @@
                                              <tr>
                                                  <th>Aluno</th>
                                                  <th>Último acesso</th>
-                                                 <th>Role</th>
+                                                 <th>Média</th>
                                                  <th>Indicadores</th>
                                              </tr>
                                          </thead>
@@ -227,7 +239,7 @@
                                              <tr>
                                                  <td>Daniel Vilas-Boas</td>
                                                  <td>05/12/2016 19:30</td>
-                                                 <td>Member</td>
+                                                 <td>7.0</td>
                                                  <td>
                                                      <span class="tag tag-success">Regular</span>
                                                  </td>
@@ -235,7 +247,7 @@
                                              <tr>
                                                  <td>Eliana Silva</td>
                                                  <td>09/12/2016 07:30</td>
-                                                 <td>Staff</td>
+                                                 <td>4.1</td>
                                                  <td>
                                                      <span class="tag tag-danger">Evasão</span>
                                                      <span class="tag tag-warning">Atenção</span>
@@ -244,7 +256,7 @@
                                              <tr>
                                                  <td>Fernando Miguel</td>
                                                  <td>11/12/2016 12:22</td>
-                                                 <td>Admin</td>
+                                                 <td>1.2</td>
                                                  <td>
                                                      <span class="tag tag-default">Comportamento atípico</span>
                                                  </td>
@@ -252,7 +264,7 @@
                                              <tr>
                                                  <td>Felipe Souza Filho</td>
                                                  <td>05/12/2016 22:41</td>
-                                                 <td>Member</td>
+                                                 <td>5.9</td>
                                                  <td>
                                                      <span class="tag tag-warning">Atenção</span>
                                                       <span class="tag tag-default">Comportamento atípico</span>
@@ -261,7 +273,7 @@
                                              <tr>
                                                  <td>Geraldo Astolfo</td>
                                                  <td>05/12/2016 08:00</td>
-                                                 <td>Staff</td>
+                                                 <td>8.0</td>
                                                  <td>
                                                      <span class="tag tag-success">Regular</span>
                                                  </td>
@@ -274,7 +286,7 @@
                                              <tr>
                                                  <th>Aluno</th>
                                                  <th>Último acesso</th>
-                                                 <th>Role</th>
+                                                 <th>Média</th>
                                                  <th>Indicadores</th>
                                              </tr>
                                          </thead>
@@ -282,7 +294,7 @@
                                              <tr>
                                                  <td>Homer simpson</td>
                                                  <td>05/12/2016 19:30</td>
-                                                 <td>Member</td>
+                                                 <td>9.0</td>
                                                  <td>
                                                      <span class="tag tag-success">Regular</span>
                                                  </td>
@@ -290,7 +302,7 @@
                                              <tr>
                                                  <td>Igor Pedrosa</td>
                                                  <td>09/12/2016 07:30</td>
-                                                 <td>Staff</td>
+                                                 <td>0</td>
                                                  <td>
                                                      <span class="tag tag-danger">Evasão</span>
                                                      <span class="tag tag-warning">Atenção</span>
@@ -299,7 +311,7 @@
                                              <tr>
                                                  <td>João Carlos Fonseca</td>
                                                  <td>11/12/2016 12:22</td>
-                                                 <td>Admin</td>
+                                                 <td>4.4</td>
                                                  <td>
                                                      <span class="tag tag-default">Comportamento atípico</span>
                                                  </td>
@@ -307,7 +319,7 @@
                                              <tr>
                                                  <td>José Araújo</td>
                                                  <td>05/12/2016 22:41</td>
-                                                 <td>Member</td>
+                                                 <td>5.5</td>
                                                  <td>
                                                      <span class="tag tag-warning">Atenção</span>
                                                       <span class="tag tag-default">Comportamento atípico</span>
@@ -316,7 +328,7 @@
                                              <tr>
                                                  <td>Lenine Fraga</td>
                                                  <td>05/12/2016 08:00</td>
-                                                 <td>Staff</td>
+                                                 <td>7.3</td>
                                                  <td>
                                                      <span class="tag tag-success">Regular</span>
                                                  </td>
@@ -330,7 +342,7 @@
                                              <tr>
                                                  <th>Aluno</th>
                                                  <th>Último acesso</th>
-                                                 <th>Role</th>
+                                                 <th>Média</th>
                                                  <th>Indicadores</th>
                                              </tr>
                                          </thead>
@@ -338,7 +350,7 @@
                                              <tr>
                                                  <td>Maria da Rocha</td>
                                                  <td>05/12/2016 19:30</td>
-                                                 <td>Member</td>
+                                                 <td>8.2</td>
                                                  <td>
                                                      <span class="tag tag-success">Regular</span>
                                                  </td>
@@ -346,7 +358,7 @@
                                              <tr>
                                                  <td>Marta Camelo</td>
                                                  <td>09/12/2016 07:30</td>
-                                                 <td>Staff</td>
+                                                 <td>1.1</td>
                                                  <td>
                                                      <span class="tag tag-danger">Evasão</span>
                                                      <span class="tag tag-warning">Atenção</span>
@@ -355,7 +367,7 @@
                                              <tr>
                                                  <td>Miguel Henrique Souza</td>
                                                  <td>11/12/2016 12:22</td>
-                                                 <td>Admin</td>
+                                                 <td>8.2</td>
                                                  <td>
                                                      <span class="tag tag-default">Comportamento atípico</span>
                                                  </td>
@@ -363,7 +375,7 @@
                                              <tr>
                                                  <td>Nara Maria Wanderley</td>
                                                  <td>05/12/2016 22:41</td>
-                                                 <td>Member</td>
+                                                 <td>4.7</td>
                                                  <td>
                                                      <span class="tag tag-warning">Atenção</span>
                                                       <span class="tag tag-default">Comportamento atípico</span>
@@ -372,14 +384,13 @@
                                              <tr>
                                                  <td>Otávio Carapuceiro</td>
                                                  <td>05/12/2016 08:00</td>
-                                                 <td>Staff</td>
+                                                 <td>6.5</td>
                                                  <td>
                                                      <span class="tag tag-success">Regular</span>
                                                  </td>
                                              </tr>
                                          </tbody>
                                      </table>
-
                                      <nav>
                                          <ul class="pagination">
                                              <li class="page-item active" onclick="showTable(1)">
@@ -425,11 +436,20 @@
     <script src="/bower_components/pace/pace.min.js"></script>
     <script src="/bower_components/chart.js/dist/Chart.min.js"></script>
 
+    <script src="/bower_components/vex/dist/js/vex.combined.min.js"></script>
+    <script>
+    vex.defaultOptions.className = 'vex-theme-os';
+
+    </script>
+    <!-- <script>vex.defaultOptions.className = 'vex-theme-default';</script> -->
+    <link rel="stylesheet" href="/bower_components/vex/dist/css/vex.css" />
+    <link rel="stylesheet" href="/bower_components/vex/dist/css/vex-theme-os.css" />
+
 
     <!-- GenesisUI main scripts -->
 
     <script src="/js/app.js"></script>
-
+    <script src="/js/advanced.js"></script>
 
 
 

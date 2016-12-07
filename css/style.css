@@ -7720,3 +7720,6 @@ table {
 
 .page-link, .pagination-datatables li a, .pagination li a {
   color: #167495; }
+
+.tag:hover {
+  cursor: pointer; }
