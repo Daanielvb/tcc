@@ -243,7 +243,7 @@
 				      xAxis: {
 				          categories: ['1', '2', '3', '4', '5'],
 				          title: {
-				              text: 'Experiment No.'
+				              text: 'Acessos semanais'
 				          }
 				      },
 
@@ -252,11 +252,11 @@
 				              text: 'Quantidade'
 				          },
 				          plotLines: [{
-				              value: 932,
+				              value: 4,
 				              color: 'red',
 				              width: 1,
 				              label: {
-				                  text: 'Média: 50',
+				                  text: 'Média: 4',
 				                  align: 'center',
 				                  style: {
 				                      color: 'gray'
@@ -268,11 +268,11 @@
 				      series: [{
 				          name: 'Observations',
 				          data: [
-				              [760, 801, 848, 895, 965],
-				              [733, 853, 939, 980, 1080],
-				              [714, 762, 817, 870, 918],
-				              [724, 802, 806, 871, 950],
-				              [834, 836, 864, 882, 910]
+				              [10, 13, 20, 25, 30],
+				              [10, 13, 20, 25, 30],
+				              [10, 13, 20, 25, 30],
+				              [10, 13, 20, 25, 30],
+				              [10, 13, 20, 25, 30]
 				          ],
 				          tooltip: {
 				              headerFormat: '<em>Experiment No {point.key}</em><br/>'
@@ -282,10 +282,10 @@
 				          color: Highcharts.getOptions().colors[0],
 				          type: 'scatter',
 				          data: [ // x, y positions where 0 is the first category
-				              [0, 644],
-				              [4, 718],
-				              [4, 951],
-				              [4, 969]
+				              [0, 10],
+				              [4, 20],
+				              [4, 10],
+				              [4, 15]
 				          ],
 				          marker: {
 				              fillColor: 'white',
