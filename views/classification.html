@@ -265,6 +265,7 @@
         <table class="table table-bordered table-striped table-condensed" id="table-1">
             <thead>
                 <tr>
+                    <th><i class="fa fa-check fa-lg m-t-2"></i></th>
                     <th>Aluno</th>
                     <th>Acessos semanais</th>
                     <th>Interações individuais</th>
@@ -275,68 +276,70 @@
             </thead>
             <tbody>
                 <tr>
+                    <td> <input type="checkbox" id="checkbox-1" value="1"/> </td>
                     <td>André Raul Farias</td>
                     <td>6</td>
                     <td>3</td>
                     <td>1</td>
                     <td>6.0</td>
-                    <td>
-                        <span class="tag tag-danger">Evasão</span>
+                    <td  id="label-box-1">
+
 
                     </td>
                 </tr>
                 <tr>
+                  <td> <input type="checkbox" id="checkbox-2" value="2"/> </td>
                     <td>Anna Manuela Santana</td>
                     <td>6</td>
                     <td>3</td>
                     <td>1</td>
                     <td>6.0</td>
-                    <td>
-                        <span class="tag tag-primary">Comp. atípico</span>
+                    <td  id="label-box-2">
 
                     </td>
 
 
                 </tr>
                 <tr>
+                  <td> <input type="checkbox" id="checkbox-3" value="3"/> </td>
                     <td>Bruno Rafael Tavares</td>
                     <td>6</td>
                     <td>3</td>
                     <td>1</td>
                     <td>6.0</td>
-                    <td>
-                          <span class="tag tag-warning">Atenção</span>
+                    <td  id="label-box-3">
 
                     </td>
 
                 </tr>
                 <tr>
+                  <td> <input type="checkbox" id="checkbox-4" value="4"/> </td>
                     <td>Carlos Henrique</td>
                     <td>6</td>
                     <td>3</td>
                     <td>1</td>
                     <td>6.0</td>
-                    <td>
-                          <span class="tag tag-warning">Atenção</span>
+                    <td id="label-box-4">
 
                     </td>
                 </tr>
                 <tr>
+                  <td> <input type="checkbox" id="checkbox-5" value="5"/> </td>
                     <td>Camilla Souza</td>
                     <td>6</td>
                     <td>3</td>
                     <td>1</td>
                     <td>6.0</td>
-                    <td>
-                          <span class="tag tag-warning">Atenção</span>
+                    <td  id="label-box-5">
+
 
                     </td>
                 </tr>
             </tbody>
         </table>
-        <button type="button" class="btn btn-danger"><i class="fa fa-exclamation fa-lg m-t-2"></i>&nbsp; Evasão</button>
-        <button type="button" class="btn btn-primary"><i class="fa fa-lightbulb-o"></i>&nbsp; Comportamento atípico</button>
-        <button type="button" class="btn btn-warning"><i class="fa fa-comment-o fa-lg m-t-2"></i>&nbsp; Precisa de atenção</button>
+        <button type="button" class="btn btn-danger" onclick="addLabels('danger')"><i class="fa fa-exclamation fa-lg m-t-2"></i>&nbsp; Evasão</button>
+        <button type="button" class="btn btn-primary" onclick="addLabels('primary')"><i class="fa fa-lightbulb-o"></i>&nbsp; Comportamento atípico</button>
+        <button type="button" class="btn btn-warning" onclick="addLabels('warning')"><i class="fa fa-comment-o fa-lg m-t-2"></i>&nbsp; Precisa de atenção</button>
 
         <br>
         <br>

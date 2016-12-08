@@ -28,6 +28,20 @@ var showResultData = function(data) {
 
 }
 
+
+var addLabels = function(label){
+  var checkboxes = [];
+  $("td").children("input:checked").each(function( index ) {
+    if($(this).val() != 0)
+      checkboxes.push($( this ).val() );
+  });
+  console.log(checkboxes);
+  for(id in checkboxes){
+  //  if(!$("#label-box-" + checkboxes[id]).contains(labelStrings[label]))
+    $("#label-box-" + checkboxes[id]).append(labelStrings[label]);
+  }
+}
+
 var insertBoxes = function(data){
   $("#block-one").show();
   $("#data-one").text(data[0]);
@@ -59,4 +73,10 @@ var classificationResults = {
     "3": [37,64], //ok
     "3,4": [62,38], //ok
     "4": [20,40,41], //ok
+};
+
+var labelStrings = {
+   danger : "<span class='tag tag-danger'>Evasão</span>",
+   warning:  "<span class='tag tag-warning'>Atenção</span>",
+   primary: "<span class='tag tag-primary'>Comp. atípico</span>"
 };
