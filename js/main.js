@@ -3,7 +3,10 @@
 
 	$( ".card a" ).on( "click", function() {
 	 var myData = $(this).data();
-	 setDiscipline(myData);
+	 if(window.location.pathname != "/views/grades.html"){
+ 			setDiscipline(myData);
+ 		}
+
 	});
 
 

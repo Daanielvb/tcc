@@ -49,7 +49,6 @@ var addLabels = function(label){
 var myFunction = function(){
   $( "#table-1" ).clone().attr("id", "copy-table").appendTo(".result-table")
   $("#copy-table .checkbox-td").remove();
-  $(".result-table-title").text("Classificação atual");
 }
 
 var insertBoxes = function(data){
