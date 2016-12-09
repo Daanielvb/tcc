@@ -205,8 +205,11 @@
 										console.log(value);
 										console.log(label);
 										console.log(clickedElementindex);
+										//var options = {...};
+
+    								$('[data-remodal-id=modal]').remodal();
 										//TODO: ABRIR MODAL AQUI
-							      
+							      /* other stuff that requires slice's
 							   }
 						    }
 						);

@@ -1,6 +1,7 @@
 $("#classificar").click(function() {
     $("#classification-content").hide();
     $(".loader").fadeIn('slow');
+    $("#copy-table").remove();
     var filters = $('.form-check-input:checkbox:checked');
     var result = "";
     var resultData = [];
@@ -11,10 +12,9 @@ $("#classificar").click(function() {
     for (var key in classificationResults) {
         if (key == result) {
             resultData = classificationResults[key];
-            //TODO: Mostrar os dados de cima
         }
     }
-
+    $('.form-check-input:checkbox').removeAttr('checked');
     showResultData(resultData);
 })
 
@@ -35,11 +35,21 @@ var addLabels = function(label){
     if($(this).val() != 0)
       checkboxes.push($( this ).val() );
   });
-  console.log(checkboxes);
   for(id in checkboxes){
-  //  if(!$("#label-box-" + checkboxes[id]).contains(labelStrings[label]))
-    $("#label-box-" + checkboxes[id]).append(labelStrings[label]);
+    if(!$("#label-box-" + checkboxes[id]).has(".tag-" + label).length > 0){
+       $("#label-box-" + checkboxes[id]).append(labelStrings[label]);
+     }
+    else {
+      $("#label-box-" + checkboxes[id] + " .tag-" + label).remove()
+    }
   }
+}
+
+
+var myFunction = function(){
+  $( "#table-1" ).clone().attr("id", "copy-table").appendTo(".result-table")
+  $("#copy-table .checkbox-td").remove();
+  $(".result-table-title").text("Classificação atual");
 }
 
 var insertBoxes = function(data){

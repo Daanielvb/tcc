@@ -28,8 +28,9 @@
     <link href="/css/style.css" rel="stylesheet">
 
     <script src="/js/highcharts.js"></script>
-<script src="/js/highcharts-more.js"></script>
-<script src="/js/exporting.js"></script>
+    <script src="/js/highcharts-more.js"></script>
+    <link rel="stylesheet" href="/bower_components/remodal/dist/remodal.css">
+    <link rel="stylesheet" href="/bower_components/remodal/dist/remodal-default-theme.css">
 </head>
 
 <!-- BODY options, add following classes to body to change options
@@ -106,46 +107,46 @@
                     <a class="nav-link" href="index.html"><i class="fa fa-area-chart fa-lg m-t-2" id="areaChart"></i> Banco de questões</a>
                 </li>
 
-                 <li class="nav-item nav-dropdown">
-                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-eye"></i>
+                <li class="nav-item nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-eye"></i>
                       Visualizar Turma
                         </a>
 
-                        <ul class="nav-dropdown-items">
+                    <ul class="nav-dropdown-items">
 
-                            <li class="nav-item ">
-                                <a class="nav-link" href="grades.html">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="grades.html">
                                    Notas
                                 </a>
 
-                            </li>
+                        </li>
 
-                            <li class="nav-item active bd-sidenav-active">
-                                <a class="nav-link active" href="usage.html">
+                        <li class="nav-item active bd-sidenav-active">
+                            <a class="nav-link active" href="usage.html">
                                     Uso do sistema
                                 </a>
 
 
-                            </li>
+                        </li>
 
-                            <li class="nav-item ">
-                                <a class="nav-link" href="advanced.html">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="advanced.html">
                                    Acompanhamento Avançado
                                 </a>
 
 
-                            </li>
+                        </li>
 
-                            <li class="nav-item">
-                                     <a class="nav-link" href="classification.html">
-                                     </i> Classificação
-                                   </a>
-                            </li>
-                </ul>
-                    </li>
-                       <li class="nav-item">
-                                <a class="nav-link" href="home.html"><i class="fa fa-home fa-lg m-t-2" id="areaChart"></i> Disciplinas</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="classification.html">
+                                </i> Classificação
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html"><i class="fa fa-home fa-lg m-t-2" id="areaChart"></i> Disciplinas</a>
+                </li>
 
             </ul>
         </nav>
@@ -159,44 +160,44 @@
             <h1 class="page-title"> Uso do sistema </h1>
 
             <nav class="navbar navbar-dark bg-inverse">
-              <div class="nav navbar-nav">
+                <div class="nav navbar-nav">
 
-              <label class="form-check-inline">
+                    <label class="form-check-inline">
           <input class="form-check-input" type="radio" checked="checked" name="inlineRadioOptions" id="inlineRadio1" value="option1" data-name="Acessos semanais"> Acessos Semanais
             </label>
-            <label class="form-check-inline">
+                    <label class="form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" data-name="Interações individuais"> Interações individuais
             </label>
-            <label class="form-check-inline">
+                    <label class="form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" data-name="Interações em grupo"> Interações em grupo
             </label>
-            <label class="form-check-inline">
+                    <label class="form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4" data-name="Aulas Assistidas"> Aulas Assistidas
             </label>
-            <label class="form-check-inline">
+                    <label class="form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5" data-name="Média de acerto em questões"> Média de acerto em questões
             </label>
-               <!-- <a class="nav-item nav-link active" href="#">Acessos Semanais <span class="sr-only">(current)</span></a>
+                    <!-- <a class="nav-item nav-link active" href="#">Acessos Semanais <span class="sr-only">(current)</span></a>
                <a class="nav-item nav-link" >Interações individuais</a>
                <a class="nav-item nav-link" >Interações em grupo</a>
                <a class="nav-item nav-link" >Aulas assistidas</a>
                <a class="nav-item nav-link" href="#">Média de acerto em questões</a> -->
 
-          </div>
-          </nav>
+                </div>
+            </nav>
             <div class="card-columns col-2">
 
                 <div class="card">
                     <div class="card-header">
-                      <h5>  Acessos semanais </h5>
+                        <h5>  Acessos semanais </h5>
                         <div class="card-actions">
                             <div class="input-group">
 
-                                            <span class="input-group-btn" id="search-std">
+                                <span class="input-group-btn" id="search-std">
                                                 <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Buscar aluno</button>
                                             </span>
-                                            <input type="text" id="input1-group2" name="input1-group2" class="form-control" placeholder="Nome ou Email">
-                                        </div>
+                                <input type="text" id="input1-group2" name="input1-group2" class="form-control" placeholder="Nome ou Email">
+                            </div>
                             </a>
                         </div>
                     </div>
@@ -216,9 +217,11 @@
                         </div>
                     </div>
                     <div class="card-block">
-                        <div class="chart-wrapper 4"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                        <a data-remodal-target="modal">
+                        <div class="chart-wrapper 4">
                             <canvas id="canvas-4" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
                         </div>
+                      </a>
                     </div>
                 </div>
 
@@ -230,34 +233,117 @@
                         </div>
                     </div>
                     <div class="card-block">
+                        <a data-remodal-target="modal">
                         <div class="chart-wrapper 5">
+
                             <canvas id="canvas-5" style="display: block; width: 493px; height: 246px;" width="493" height="246"></canvas>
+
                         </div>
+                          </a>
                     </div>
                 </div>
 
 
-                                <div class="card">
-                                    <div class="card-header">
-                                      <h5> Acessos semanais </h5>
-                                        <div class="card-actions">
-                                            <a href="http://www.chartjs.org">
-                                                <small class="text-muted">+</small>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-block">
-                                        <div class="chart-wrapper">
-                                            <div id="container" ></div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5> Acessos semanais </h5>
+                        <div class="card-actions">
+                            <a href="http://www.chartjs.org">
+                                <small class="text-muted">+</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="chart-wrapper">
+                            <div id="container"></div>
 
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
         </div>
 
+
+        <div class="remodal" data-remodal-id="modal">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <h1>Detalhamento de alunos</h1>
+
+            <table class="table table-bordered table-striped table-condensed" id="table-1">
+                <thead>
+                    <tr>
+                        <th class="checkbox-td"><i class="fa fa-check fa-lg m-t-2"></i></th>
+                        <th>Aluno</th>
+                        <th>Acessos semanais</th>
+                        <th>Interações individuais</th>
+                        <th>Interações em grupo</th>
+                        <th>Média das atividades</th>
+                        <th>Aulas Assistidas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="checkbox-td"> <input type="checkbox" id="checkbox-1" value="1"/> </td>
+                        <td>André Raul Farias</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>6.0</td>
+                        <td>01, 02</td>
+                    </tr>
+                    <tr>
+                      <td class="checkbox-td"> <input type="checkbox" id="checkbox-2" value="2"/> </td>
+                        <td>Anna Manuela Santana</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>6.0</td>
+                        <td>01, 02</td>
+
+                    </tr>
+                    <tr>
+                      <td class="checkbox-td"> <input type="checkbox" id="checkbox-3" value="3"/> </td>
+                        <td>Bruno Rafael Tavares</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>6.0</td>
+                        <td>01</td>
+                    </tr>
+                    <tr>
+                      <td class="checkbox-td"> <input type="checkbox" id="checkbox-4" value="4"/> </td>
+                        <td>Carlos Henrique</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>6.0</td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                      <td class="checkbox-td"> <input type="checkbox" id="checkbox-5" value="5"/> </td>
+                        <td>Camilla Souza</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>6.0</td>
+                        <td>01, 02</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <br>
+            <div class="card-block">
+                                    <button type="button" class="btn btn-outline-primary"><i class="fa fa-comment-o"></i>&nbsp; Enviar mensagem</button>
+                                    <button type="button" class="btn btn-outline-secondary"><i class="fa fa-file-archive-o"></i>&nbsp; Enviar material</button>
+                                    <button type="button" class="btn btn-outline-success"><i class="fa fa-comments-o "></i>&nbsp; Marcar chat</button>
+                                    <button type="button" class="btn btn-outline-warning" style="margin-top:1em;"><i class="fa fa-group"></i>&nbsp; Atividade em grupo</button>
+                                    <button type="button" data-remodal-action="cancel" class="btn btn-outline-danger" style="margin-top:1em;"><i class="fa fa-hand-o-right"></i>&nbsp; Sair</button>
+
+                                </div>
+
+        </div>
 
     </main>
 
@@ -277,7 +363,7 @@
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/bower_components/pace/pace.min.js"></script>
     <script src="/bower_components/chart.js/dist/Chart.min.js"></script>
-
+      <script src="/bower_components/remodal/dist/remodal.min.js"></script>
 
     <!-- GenesisUI main scripts -->
 
