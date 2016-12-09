@@ -4,7 +4,7 @@
 						//changeLabels($(this).data().name);
 						var currentFilter = $(this).data().name;
 						$( ".card-header h5" ).text(currentFilter);
-
+						$(".current-attr").text(currentFilter);
 						boxChart.setTitle({text: currentFilter});
 
 						boxChart.xAxis[0].setTitle({text: currentFilter});
@@ -202,13 +202,10 @@
 							      var clickedElementindex = activePoints[0]["_index"];
 							      var label = chart.data.labels[clickedElementindex];
 							      var value = chart.data.datasets[0].data[clickedElementindex];
-										console.log(value);
+										$("#std-number").text(label);
+										$("#attr-range").text(value);
 										console.log(label);
-										console.log(clickedElementindex);
-										//var options = {...};
-
-    								$('[data-remodal-id=modal]').remodal();
-										//TODO: ABRIR MODAL AQUI
+										console.log(value);
 							   }
 						    }
 						);
@@ -219,10 +216,12 @@
 							    if(activePoints.length > 0){
 							      var clickedElementindex = activePoints[0]["_index"];
 							      var label = chart.data.labels[clickedElementindex];
-							      var value = chart.data.datasets[0].data[clickedElementindex];
-										console.log(value);
+
+										var value = chart.data.datasets[0].data[clickedElementindex];
 										console.log(label);
-										console.log(clickedElementindex);
+										console.log(value);
+										$("#std-number").text(label);
+										$("#attr-range").text(value);
 										//TODO: ABRIR MODAL AQUI
 							      /* other stuff that requires slice's label and value */
 							   }
