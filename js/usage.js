@@ -209,7 +209,6 @@
 
     								$('[data-remodal-id=modal]').remodal();
 										//TODO: ABRIR MODAL AQUI
-							      /* other stuff that requires slice's
 							   }
 						    }
 						);

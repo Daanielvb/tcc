@@ -19,3 +19,16 @@ $(".tag-danger, .tag-warning, .tag-default").click(function(){
   }
 })
 })
+
+$(".switch-input").change(function(){
+  var classe = $(this).parent().attr('class');
+  //var flag = $(this).checked();
+  var flag = $(this).is(":checked");
+  var filter = "." + classe.substring(38,classe.length);
+  if(flag == true)
+    $(filter).show();
+  else {
+    $(filter).hide();
+  }
+
+});

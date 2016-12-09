@@ -93,7 +93,7 @@
 	        labels : ['0-2.5','2.5-5','5-7.5','7.5-10'],
 	        datasets : [
 	            {
-	                label: 'Média das atividades',
+	                label: 'Total de alunos',
 	                backgroundColor : '#5CACEE',
 	                borderColor : 'rgba(151,187,205,0.8)',
 	                highlightFill : 'rgba(151,187,205,0.75)',
@@ -231,6 +231,37 @@
 					}]
 				}
 
+
+
+			$("#canvas-5").click(
+					function(evt){
+						var activePoints = chart.getElementsAtEvent(evt);
+						if(activePoints.length > 0){
+							var clickedElementindex = activePoints[0]["_index"];
+							var label = chart.data.labels[clickedElementindex];
+							var value = chart.data.datasets[0].data[clickedElementindex];
+							$("#std-number").text(label);
+							$("#attr-range").text(value);
+							//var options = {...};
+
+							//$('[data-remodal-id=modal]').remodal();
+							//TODO: ABRIR MODAL AQUI
+					 }
+					}
+			);
+
+			$("#canvas-4").click(
+					function(evt){
+						var activePoints = chart2.getElementsAtEvent(evt);
+						if(activePoints.length > 0){
+							var clickedElementindex = activePoints[0]["_index"];
+							var label = chart2.data.labels[clickedElementindex];
+							var value = chart2.data.datasets[0].data[clickedElementindex];
+							$("#std-number").text(label);
+							$("#attr-range").text(value);
+					 }
+					}
+			);
 
 			var boxChart = new Highcharts.Chart(options);
 
