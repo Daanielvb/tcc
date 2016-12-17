@@ -45,6 +45,9 @@ var addLabels = function(label){
   }
 }
 
+var selectAll = function(){
+    $("table input:checkbox").prop('checked', $("#select-all").prop("checked"));
+}
 
 var myFunction = function(){
   $( "#table-1" ).clone().attr("id", "copy-table").appendTo(".result-table")

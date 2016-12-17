@@ -41,6 +41,8 @@
 		}
 	};
 
+
+
 	$("#home-boxes .card").click(function(){
 	  var page = ($(this).attr('id'));
 		if(page == "students"){
@@ -262,6 +264,8 @@
 					 }
 					}
 			);
+
+
 
 			var boxChart = new Highcharts.Chart(options);
 

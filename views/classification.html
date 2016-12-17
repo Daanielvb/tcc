@@ -228,7 +228,7 @@
                 </div>
 
                 <div class="result-table">
-                  
+
 
                 </div>
 
@@ -263,6 +263,7 @@
     <script src="/js/classification.js"></script>
 
 
+
     <div class="remodal" data-remodal-id="modal">
         <button data-remodal-action="close" class="remodal-close"></button>
         <h1>Classificar alunos</h1>
@@ -270,7 +271,7 @@
         <table class="table table-bordered table-striped table-condensed" id="table-1">
             <thead>
                 <tr>
-                    <th class="checkbox-td"><i class="fa fa-check fa-lg m-t-2"></i></th>
+                    <th class="checkbox-td"><i class="fa fa-check fa-lg m-t-2"></i> <input type="checkbox" onclick="selectAll()" id="select-all" value="0"/></th>
                     <th>Aluno</th>
                     <th>Acessos semanais</th>
                     <th>Interações individuais</th>
@@ -343,7 +344,7 @@
             </tbody>
         </table>
         <button type="button" class="btn btn-danger" onclick="addLabels('danger')"><i class="fa fa-exclamation fa-lg m-t-2"></i>&nbsp; Evasão</button>
-        <button type="button" class="btn btn-primary" onclick="addLabels('primary')"><i class="fa fa-lightbulb-o"></i>&nbsp; Comportamento atípico</button>
+        <button type="button" class="btn btn-primary" onclick="addLabels('primary')"><i class="fa fa-user-secret"></i>&nbsp; Comportamento atípico</button>
         <button type="button" class="btn btn-warning" onclick="addLabels('warning')"><i class="fa fa-comment-o fa-lg m-t-2"></i>&nbsp; Precisa de atenção</button>
 
         <br>
