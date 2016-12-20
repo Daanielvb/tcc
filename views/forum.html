@@ -177,7 +177,7 @@
               </td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">32</a></td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">123</a></td>
-              <td class="hidden-xs hidden-sm">por <a href="#">Anônimo</a><br><small><i class="fa fa-clock-o"></i> 2 semanas atrás</small></td>
+              <td class="hidden-xs hidden-sm">por <a href="#" data-remodal-target="modal">Anônimo</a><br><small><i class="fa fa-clock-o"></i> 2 semanas atrás</small></td>
             </tr>
             <tr>
               <td class="text-center"><i class="fa fa-wrench fa-2x text-primary"></i></td>
@@ -186,16 +186,16 @@
               </td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">6</a></td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">19</a></td>
-              <td class="hidden-xs hidden-sm">por <a href="#">Joana Dark</a><br><small><i class="fa fa-clock-o"></i> 1 mês atrás</small></td>
+              <td class="hidden-xs hidden-sm">por <a href="#" data-remodal-target="modal">Joana Dark</a><br><small><i class="fa fa-clock-o"></i> 1 mês atrás</small></td>
             </tr>
             <tr>
               <td class="text-center"><i class="fa fa-book fa-2x text-success"></i></td>
               <td>
                 <h4><a href="#">Atividade 1</a><br><small>Dúvida sobre as atividades</small></h4>
               </td>
-              <td class="text-center hidden-xs hidden-sm"><a href="#">6</a></td>
+              <td class="text-center hidden-xs hidden-sm"><a href="#" >6</a></td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">19</a></td>
-              <td class="hidden-xs hidden-sm">por <a href="#">Joana Dark</a><br><small><i class="fa fa-clock-o"></i> 1 mês atrás</small></td>
+              <td class="hidden-xs hidden-sm">por <a href="#" data-remodal-target="modal">Anônimo</a><br><small><i class="fa fa-clock-o"></i> 1 mês atrás</small></td>
             </tr>
           </tbody>
         </table>
@@ -219,7 +219,7 @@
               </td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">8</a></td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">121</a></td>
-              <td class="hidden-xs hidden-sm">por <a href="#">João Rafael</a><br><small><i class="fa fa-clock-o"></i> 3 horas atrás</small></td>
+              <td class="hidden-xs hidden-sm">por <a href="#" data-remodal-target="modal">João Rafael</a><br><small><i class="fa fa-clock-o"></i> 3 horas atrás</small></td>
             </tr>
             <tr>
               <td class="text-center"><i class="fa fa-exclamation fa-2x text-danger"></i></td>
@@ -228,7 +228,7 @@
               </td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">67</a></td>
               <td class="text-center hidden-xs hidden-sm"><a href="#">1 288</a></td>
-              <td class="hidden-xs hidden-sm">por <a href="#">Anônimo</a><br><small><i class="fa fa-clock-o"></i> 14 minutos atrás</small></td>
+              <td class="hidden-xs hidden-sm">por <a href="#" data-remodal-target="modal">Anônimo</a><br><small><i class="fa fa-clock-o"></i> 14 minutos atrás</small></td>
             </tr>
           </tbody>
         </table>
@@ -255,8 +255,9 @@
     <script src="/bower_components/tether/dist/js/tether.min.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/bower_components/pace/pace.min.js"></script>
-    <script src="/bower_components/chart.js/dist/Chart.min.js"></script>
     <script src="/bower_components/remodal/dist/remodal.min.js"></script>
+    <link rel="stylesheet" href="/bower_components/remodal/dist/remodal.css">
+    <link rel="stylesheet" href="/bower_components/remodal/dist/remodal-default-theme.css">
 
     <!-- GenesisUI main scripts -->
 
@@ -267,7 +268,37 @@
 
     <!-- Plugins and scripts required por this views -->
 
+    <div class="remodal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1>Detalhamento do aluno</h1>
 
+        <table class="table table-bordered table-striped table-condensed" id="table-1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Total de postagens no fórum</th>
+                    <th>Total de mensagens privadas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Daniel Cirne </td>
+                    <td>6</td>
+                    <td>9</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="card-block">
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-comment-o"></i>&nbsp; Enviar mensagem</button>
+            <button type="button" class="btn btn-outline-secondary"><i class="fa fa-file-archive-o"></i>&nbsp; Enviar material</button>
+            <button type="button" class="btn btn-outline-success"><i class="fa fa-comments-o "></i>&nbsp; Agendar chat</button>
+            <button type="button" data-remodal-action="cancel" class="btn btn-outline-danger" ><i class="fa fa-hand-o-right"></i>&nbsp; Sair</button>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
