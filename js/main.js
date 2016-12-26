@@ -118,7 +118,7 @@
 	                data : [randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor(),randomScalingFactor()]
 	            },
 	            {
-	                label: 'Aluno',
+	                label: 'João',
 	                backgroundColor : 'rgba(151,187,205,0.2)',
 	                borderColor : 'rgba(151,187,205,1)',
 	                pointBackgroundColor : 'rgba(151,187,205,1)',
@@ -176,22 +176,22 @@
 
 
 					xAxis: {
-							categories: ['1', '2', '3', '4', '5'],
+							categories: ['Ativ. 1', 'Ativ. 2', 'Ativ. 3', 'Ativ. 4'],
 							title: {
-									text: 'Média das atividades'
+									text: 'Atividade'
 							}
 					},
 
 					yAxis: {
 							title: {
-									text: 'Quantidade'
+									text: 'Média das atividades'
 							},
 							plotLines: [{
-									value: 4,
+									value: 5,
 									color: 'red',
 									width: 1,
 									label: {
-											text: 'Média: 4',
+											text: 'Média: 5',
 											align: 'center',
 											style: {
 													color: 'gray'
@@ -201,34 +201,31 @@
 					},
 
 					series: [{
-							name: 'Observations',
+							name: 'Observações',
 							data: [
-									[10, 13, 20, 25, 30],
-									[10, 13, 20, 25, 30],
-									[10, 13, 20, 25, 30],
-									[10, 13, 20, 25, 30],
-									[10, 13, 20, 25, 30]
+									[0, 3, 6, 5.5, 10],
+									[1, 5, 7, 6, 9.5],
+									[0, 2, 4, 5, 10],
+									[2, 3, 7, 5.5, 8.8],
 							],
 							tooltip: {
-									headerFormat: '<em>Experiment No {point.key}</em><br/>'
+									headerFormat: '<em>Atividade {point.key}</em><br/>'
 							}
 					}, {
-							name: 'Outlier',
+							name: 'Valor discrepante',
 							color: Highcharts.getOptions().colors[0],
 							type: 'scatter',
 							data: [ // x, y positions where 0 is the first category
-									[0, 10],
-									[4, 20],
-									[4, 10],
-									[4, 15]
+									[1, 0 ],
+									[2, 10]
 							],
 							marker: {
 									fillColor: 'white',
-									lineWidth: 1,
+									lineWidth: 2,
 									lineColor: Highcharts.getOptions().colors[0]
 							},
 							tooltip: {
-									pointFormat: 'Observation: {point.y}'
+									pointFormat: 'Nota: {point.y}'
 							}
 					}]
 				}

@@ -252,7 +252,7 @@
 
 
 				      xAxis: {
-				          categories: ['1', '2', '3', '4', '5'],
+				          categories: ['1', '2', '3', '4'],
 				          title: {
 				              text: 'Acessos semanais'
 				          }
@@ -283,7 +283,6 @@
 				              [10, 13, 20, 25, 30],
 				              [10, 13, 20, 25, 30],
 				              [10, 13, 20, 25, 30],
-				              [10, 13, 20, 25, 30]
 				          ],
 				          tooltip: {
 				              headerFormat: '<em>Experiment No {point.key}</em><br/>'
@@ -294,9 +293,8 @@
 				          type: 'scatter',
 				          data: [ // x, y positions where 0 is the first category
 				              [0, 10],
-				              [4, 20],
-				              [4, 10],
-				              [4, 15]
+				              [2, 20],
+				              [1, 10],
 				          ],
 				          marker: {
 				              fillColor: 'white',
