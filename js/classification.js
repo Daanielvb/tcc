@@ -2,6 +2,7 @@ $("#classificar").click(function() {
     $("#classification-content").hide();
     $(".loader").fadeIn('slow');
     $("#copy-table").remove();
+    $("#original-table").remove();
     var filters = $('.form-check-input:checkbox:checked');
     var result = "";
     var resultData = [];
@@ -49,9 +50,32 @@ var selectAll = function(){
     $("table input:checkbox").prop('checked', $("#select-all").prop("checked"));
 }
 
+var setTableForDiff = function(){
+  $("#original-table tbody tr span").parent().parent().addClass("remain");
+  $("#original-table tbody tr span").remove();
+  $("#original-table #class-old").text("Classificação anterior");
+  $("#original-table tbody tr").hide();
+  $("#original-table tbody tr.remain").show();
+}
+
 var myFunction = function(){
-  $( "#table-1" ).clone().attr("id", "copy-table").appendTo(".result-table")
+  $( "#table-1" ).clone().attr("id", "copy-table").appendTo(".result-table");
+  $( "#table-1" ).clone().attr("id", "original-table").appendTo(".original-table");
+  setTableForDiff();
+  $(".diff").fadeIn('slow');
+  $("#classification-content").hide();
+  $("#selection-menu").hide();
   $("#copy-table .checkbox-td").remove();
+  $("#original-table .checkbox-td").remove();
+
+}
+
+var reclassify = function(){
+    $("#selection-menu").fadeIn('slow');
+    $(".diff").hide();
+    $("#copy-table").remove();
+    $("#original-table").remove();
+
 }
 
 var insertBoxes = function(data){
@@ -62,7 +86,6 @@ var insertBoxes = function(data){
       $("#data-two").text(data[1]);
   }
   if(data.length > 2){
-      console.log("aqui");
       $("#block-three").show();
       $("#data-three").text(data[2]);
   }

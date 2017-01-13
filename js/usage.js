@@ -57,15 +57,15 @@
 
 				var myLabels = {
 					accessLabel : ["0-2","3-4","5-6","7-8"],
-					accessText: "Quantidade de acessos",
+					accessText: "Total de alunos",
 					individualItLabel : ["0-5","6-10","11-15","15-20"],
-					iterationText: "Quantidade de interações",
+					iterationText: "Total de alunos",
 					groupItLabel : ["0-2","3-4","5-6","7-8"],
 					lessonsLabel : ["Aula 01", "Aula 02", "Aula 03", "Aula 04"],
-					lessonsText : "Quantidade de alunos",
+					lessonsText : "Total de alunos",
 					historyLabel : ["Domingo", "Segunda", "Terça", "Quarta", "Quinta","Sexta"],
 					avarageLabel : ["0 - 2.5","2.6 - 5 ","5.1 - 7.5","7.5 - 10" ],
-					avarageLabelText : "Pontuação"
+					avarageLabelText : "Total de alunos",
 				}
 
 
@@ -277,24 +277,23 @@
 				      },
 
 				      series: [{
-				          name: 'Observations',
+				          name: 'Observações',
 				          data: [
-				              [10, 13, 20, 25, 30],
-				              [10, 13, 20, 25, 30],
-				              [10, 13, 20, 25, 30],
-				              [10, 13, 20, 25, 30],
+										[0, 3, 6, 5.5, 10],
+										[1, 5, 7, 6, 9.5],
+										[0, 2, 4, 5, 10],
+										[2, 3, 7, 5.5, 8.8]
 				          ],
 				          tooltip: {
 				              headerFormat: '<em>Experiment No {point.key}</em><br/>'
 				          }
 				      }, {
-				          name: 'Outlier',
+				          name: 'Valor discrepante',
 				          color: Highcharts.getOptions().colors[0],
 				          type: 'scatter',
 				          data: [ // x, y positions where 0 is the first category
-				              [0, 10],
-				              [2, 20],
-				              [1, 10],
+										[1, 0 ],
+										[2, 10]
 				          ],
 				          marker: {
 				              fillColor: 'white',
@@ -302,7 +301,7 @@
 				              lineColor: Highcharts.getOptions().colors[0]
 				          },
 				          tooltip: {
-				              pointFormat: 'Observation: {point.y}'
+				              pointFormat: 'Valor: {point.y}'
 				          }
 				      }]
 						}

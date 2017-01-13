@@ -157,7 +157,7 @@
         <div class="container-fluid">
             <h1 class="page-title"> Classificação e acompanhamento</h1>
 
-            <nav class="navbar navbar-light">
+            <nav class="navbar navbar-light" id="selection-menu">
                 <h3> Selecione os atributos </h3>
                 <div class="nav navbar-nav">
 
@@ -226,13 +226,36 @@
                         </a>
                     </div>
                 </div>
-
+                </div>
+                <div class="diff" style="display:none;">
+                  <div class="card card-inverse card-primary">
+                                <div class="card-header">
+                                    <h3> Classificação realizada </h3>
+                                </div>
+                            </div>
+                </div>
                 <div class="result-table">
 
 
                 </div>
 
-            </div>
+                <div class="diff">
+                  <div class="card card-inverse card-warning">
+                                <div class="card-header">
+                                    <h3> Diferenças encontradas para a classificação anterior </h3>
+                                </div>
+                            </div>
+                </div>
+
+                <div class="original-table">
+
+
+                </div>
+
+                <div class="diff">
+                    <button type="button" id="classificar-again" onclick="reclassify()" class="btn btn-success btn-lg"><i class="fa fa-magic"></i>&nbsp;Nova classificação</button>
+                </div>
+
 
 
         </div>
@@ -276,7 +299,7 @@
                     <th>Interações individuais</th>
                     <th>Interações em grupo</th>
                     <th>Média das atividades</th>
-                    <th>Classificação atual</th>
+                    <th id="class-old">Classificação atual</th>
                 </tr>
             </thead>
             <tbody>
