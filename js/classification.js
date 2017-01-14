@@ -56,6 +56,13 @@ var setTableForDiff = function(){
   $("#original-table #class-old").text("Classificação anterior");
   $("#original-table tbody tr").hide();
   $("#original-table tbody tr.remain").show();
+  $(".original-table .hide").hide();
+  $(".original-table thead tr").append("<th> Manter classificação? </th>");
+  $(".original-table tbody tr").append("<td><label class='switch switch-text switch-lg switch-pill switch-info'>"
+                                        + "<input type='checkbox' class='switch-input' checked=''>"
+                                       + " <span class='switch-label' data-on='Sim' data-off='Não'></span>"
+                                       + " <span class='switch-handle'></span></label> </td>");
+
 }
 
 var myFunction = function(){
@@ -70,12 +77,13 @@ var myFunction = function(){
 
 }
 
-var reclassify = function(){
-    $("#selection-menu").fadeIn('slow');
-    $(".diff").hide();
-    $("#copy-table").remove();
-    $("#original-table").remove();
-
+var reclassify = function(pIsCancel){
+  $(".diff").hide();
+  $("#copy-table").remove();
+  $("#original-table").remove();
+  $("#selection-menu").fadeIn('slow');
+  if(pIsCancel)
+    $("#classification-content").show();
 }
 
 var insertBoxes = function(data){
