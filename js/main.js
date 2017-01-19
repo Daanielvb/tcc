@@ -191,7 +191,7 @@
 									color: 'red',
 									width: 1,
 									label: {
-											text: 'Média: 5',
+											text: '',
 											align: 'center',
 											style: {
 													color: 'gray'
@@ -203,10 +203,10 @@
 					series: [{
 							name: 'Observações',
 							data: [
-									[0, 3, 6, 5.5, 10],
-									[1, 5, 7, 6, 9.5],
+									[0, 2, 4, 6, 9],
+									[1, 2, 3, 6, 9.5],
 									[0, 2, 4, 5, 10],
-									[2, 3, 7, 5.5, 8.8],
+									[2, 3, 5.5, 7, 8.8],
 							],
 							tooltip: {
 									headerFormat: '<em>Atividade {point.key}</em><br/>'
