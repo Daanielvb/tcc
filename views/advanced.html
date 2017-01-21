@@ -23,7 +23,8 @@
     <!-- Icons -->
     <link href="/css/font-awesome.min.css" rel="stylesheet">
     <link href="/css/simple-line-icons.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="/bower_components/remodal/dist/remodal.css">
+    <link rel="stylesheet" href="/bower_components/remodal/dist/remodal-default-theme.css">
     <!-- Main styles for this application -->
     <link href="/css/style.css" rel="stylesheet">
 
@@ -198,7 +199,6 @@
                                                  <td>6.0</td>
                                                  <td>
                                                      <span class="tag tag-danger">Evasão</span>
-                                                     <span class="tag tag-primary">Comportamento atípico</span>
                                                  </td>
                                              </tr>
                                              <tr class="danger warning">
@@ -223,7 +223,6 @@
                                                  <td>0</td>
                                                  <td>
                                                      <span class="tag tag-warning">Atenção</span>
-                                                      <span class="tag tag-primary">Comportamento atípico</span>
                                                  </td>
                                              </tr>
                                              <tr class="success">
@@ -231,6 +230,14 @@
                                                  <td>05/12/2016 08:00</td>
                                                  <td>5.6</td>
                                                  <td>
+                                                 </td>
+                                             </tr>
+                                             <tr class="success">
+                                                 <td>Dário Cunha</td>
+                                                 <td>03/01/2017 08:11</td>
+                                                 <td>9.6</td>
+                                                 <td>
+                                                   <span class="tag tag-primary">Comportamento atípico</span>
                                                  </td>
                                              </tr>
                                          </tbody>
@@ -407,6 +414,10 @@
                                              <li class="page-item" onclick="showTable(3)"><a style="color:#167495" class="page-link">3</a></li>
                                              <li class="page-item" onclick="showTable(4)"><a style="color:#167495" class="page-link" >4</a></li>
                                          </ul>
+
+                                         <a data-remodal-target="modal">
+                                         <button type="button" id="classificar" data-remodal-target="modal" style="float:right;" class="btn btn-success btn-lg"> <i class="fa fa-tree"></i>&nbsp;Gerar modelo de classificação *   </a></button>
+
                                      </nav>
                                  </div>
                              </div>
@@ -478,6 +489,69 @@
     };
 
     </script>
+
+    <div class="remodal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1>Detalhamento de notas</h1>
+        <h5> Alunos com notas entre:  <span id="std-number"> 6-7 </span> </h5>
+        <h5> Total de alunos:  <span id="attr-range">10</span> </h5>
+
+        <table class="table table-bordered table-striped table-condensed" id="table-1">
+            <thead>
+                <tr>
+                    <th class="checkbox-td"><i class="fa fa-check fa-lg m-t-2"></i> <input type="checkbox" style="width: 100%; margin-left:-2px;" onclick="selectAll()" id="select-all" value="0"/></th>
+                    <th>Aluno</th>
+                    <th>Média das atividades</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="checkbox-td"> <input type="checkbox" id="checkbox-1" value="1" /> </td>
+                    <td>André Raul Farias</td>
+                    <td>6</td>
+
+                </tr>
+                <tr>
+                    <td class="checkbox-td"> <input type="checkbox" id="checkbox-2" value="2" /> </td>
+                    <td>Anna Manuela Santana</td>
+                    <td>6</td>
+
+
+                </tr>
+                <tr>
+                    <td class="checkbox-td"> <input type="checkbox" id="checkbox-3" value="3" /> </td>
+                    <td>Bruno Rafael Tavares</td>
+                    <td>6</td>
+
+                </tr>
+                <tr>
+                    <td class="checkbox-td"> <input type="checkbox" id="checkbox-4" value="4" /> </td>
+                    <td>Carlos Henrique</td>
+                    <td>6</td>
+
+                </tr>
+                <tr>
+                    <td class="checkbox-td"> <input type="checkbox" id="checkbox-5" value="5" /> </td>
+                    <td>Camilla Souza</td>
+                    <td>6</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <br>
+        <div class="card-block">
+            <button type="button" class="btn btn-outline-primary"><i class="fa fa-comment-o"></i>&nbsp; Enviar mensagem</button>
+            <button type="button" class="btn btn-outline-secondary" id="material"><i class="fa fa-file-archive-o"></i>&nbsp; Enviar material</button>
+            <button type="button" class="btn btn-outline-success"><i class="fa fa-comments-o "></i>&nbsp; Agendar chat</button>
+            <button type="button" class="btn btn-outline-warning" style="margin-top:1em;"><i class="fa fa-group"></i>&nbsp; Atividade em grupo</button>
+            <button type="button" data-remodal-action="cancel" class="btn btn-outline-danger" style="margin-top:1em;"><i class="fa fa-hand-o-right"></i>&nbsp; Sair</button>
+
+        </div>
+
+    </div>
 </body>
 
 </html>
