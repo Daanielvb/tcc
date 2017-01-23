@@ -150,29 +150,29 @@
 
         <div class="container-fluid">
             <h1 class="page-title">Modelo de classificação</h1>
-            <h5> Última classificação gerada em: 10/10/2016 </h5>
+            <h5> Última classificação realizada em: 10/10/2016 </h5>
 
-            <div class="row" id="home-boxes">
-                <div class="col-md-4 col-md-3">
+            <div class="row" id="home-group">
+                <div class="col-md-6 col-md-3">
                     <div class="card" id="students">
                         <div class="card-block">
                             <div class="h1 text-muted text-xs-right m-b-2">
                                 <i class="icon-people"></i>
                             </div>
-                            <div class="h4 m-b-0"> Alunos</div>
-                            <small class="text-muted text-uppercase font-weight-bold"><span id="qty-std">20</span> matriculados</small>
-                            <progress class="progress progress-xs progress-info m-t-1 m-b-0" value="45" max="100">45%</progress>
+                            <div class="h4 m-b-0"> Total de classificacões divergentes</div>
+                            <small class="text-muted text-uppercase font-weight-bold"><span id="qty-std">9</span> alunos</small>
+                            <progress class="progress progress-xs progress-info m-t-1 m-b-0" value="15" max="100"></progress>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-md-3">
+                <div class="col-md-6 col-md-3">
                     <div class="card" id="turma">
                         <div class="card-block">
                             <div class="h1 text-muted text-xs-right m-b-2">
                                 <i class="fa fa-percent fa-lg m-t-2"></i>
                             </div>
-                            <div class="h4 m-b-0">Percentual de erro<span id="disc-end"></span></div>
+                            <div class="h4 m-b-0">Percentual de erro da classificação atual<span id="disc-end"></span></div>
                             <small class="text-muted text-uppercase font-weight-bold">20%</small>
                             <progress class="progress progress-xs progress-warning m-t-1 m-b-0" value="20" max="100">20%</progress>
                         </div>
@@ -187,35 +187,13 @@
                          <div class="col-lg-12">
                              <div class="card">
                                  <div class="card-header" style="color:black;">
-                                     <i class="fa fa-align-justify"></i> Alunos da disciplina
+                                     <i class="fa fa-align-justify"></i> Lista de Alunos
                                  </div>
 
                                  <div class="card-block">
-                                   <div class="legenda">
-                                      <span class="tag tag-primary">Comp. atípico</span>
-                                      <span class="tag tag-danger">Evasão</span>
-                                        <span class="tag tag-warning">Atenção</span>
-                                   </div>
-
-                                   <label class="switch switch-icon switch-pill switch-primary">
-
-                                       <input type="checkbox" class="switch-input" checked="">
-                                       <span class="switch-label" data-on="" data-off=""></span>
-                                       <span class="switch-handle"></span>
-                                   </label>
-
-                                  <label class="switch switch-icon switch-pill switch-danger" style="margin-left: 1.8em;">
-                                        <input type="checkbox" class="switch-input" checked="">
-                                        <span class="switch-label" data-on="" data-off=""></span>
-                                        <span class="switch-handle"></span>
-                                    </label>
 
 
-                                  <label class="switch switch-icon switch-pill switch-warning">
-                                      <input type="checkbox" class="switch-input" checked="">
-                                      <span class="switch-label" data-on="" data-off=""></span>
-                                      <span class="switch-handle"></span>
-                                  </label>
+
                                      <table class="table table-bordered table-striped table-condensed" id="table-1" >
                                          <thead>
                                              <tr>
@@ -282,7 +260,7 @@
                                                  </td>
                                              </tr>
                                              <tr class="success">
-                                                 <td>Dário Cunha</td>
+                                                 <td>Fernanda Maria das Dores</td>
                                                  <td>
                                                      <span class="tag tag-warning">Atenção</span>
                                                  </td>
@@ -291,7 +269,7 @@
                                                  </td>
                                              </tr>
                                              <tr class="success">
-                                                 <td>Dário Cunha</td>
+                                                 <td>Priscipla Sampaio</td>
                                                  <td>
                                                        <span class="tag tag-warning">Atenção</span>
 
@@ -301,36 +279,28 @@
                                                  </td>
                                              </tr>
                                              <tr class="success">
-                                                 <td>Dário Cunha</td>
+                                                 <td>Wilton Mendes Souza</td>
                                                  <td> <span class="tag tag-primary">Comportamento atípico</span>
 
                                                  </td>
                                                  <td>
-                                                
+
                                                  </td>
                                              </tr>
                                          </tbody>
                                      </table>
 
 
-                                     <nav>
-                                         <ul class="pagination">
-                                             <li class="page-item active" onclick="showTable(1)">
-                                                 <a class="page-link" href="#">1</a>
-                                             </li>
-                                             <li class="page-item"  onclick="showTable(2)"><a style="color:#167495" class="page-link">2</a></li>
-                                             <li class="page-item" onclick="showTable(3)"><a style="color:#167495" class="page-link">3</a></li>
-                                             <li class="page-item" onclick="showTable(4)"><a style="color:#167495" class="page-link" >4</a></li>
-                                         </ul>
 
-                                     </nav>
                                  </div>
                              </div>
                          </div>
                          <!--/col-->
                      </div>
 
+
           </div>
+          <a href="classification.html" id="classification-link"><button type="button" class="btn btn-secondary btn-lg btn-block">Ir para agrupamento e classificação</button></a>
           </nav>
             <div class="card-columns col-2">
 

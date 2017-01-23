@@ -159,10 +159,21 @@ table {
 	display:none;
 }
 
+.description{
+	font-size: 16px;
+}
+
+#classification-link{
+	text-decoration: none;
+}
+
 #classificar-again{
 	margin-bottom:1em;
 }
 
+#home-group #students{
+	cursor:default;
+}
 #material {
     color: #FF851B;
     border-color: #FF851B;
