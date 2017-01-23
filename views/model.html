@@ -117,7 +117,7 @@
                             </li>
 
                             <li class="nav-item ">
-                                <a class="nav-link active" href="advanced.html">
+                                <a class="nav-link" href="advanced.html">
                                    Acompanhamento Avançado
                                 </a>
                             </li>
@@ -126,7 +126,7 @@
                                      </i> Agrupamento e classificação
                                    </a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                      <a class="nav-link" href="model.html">
                                      </i> Modelo de classificação
                                    </a>
@@ -149,8 +149,36 @@
 
 
         <div class="container-fluid">
-            <h1 class="page-title">Acompanhamento avançado</h1>
+            <h1 class="page-title">Modelo de classificação</h1>
+            <h5> Última classificação gerada em: 10/10/2016 </h5>
 
+            <div class="row" id="home-boxes">
+                <div class="col-md-4 col-md-3">
+                    <div class="card" id="students">
+                        <div class="card-block">
+                            <div class="h1 text-muted text-xs-right m-b-2">
+                                <i class="icon-people"></i>
+                            </div>
+                            <div class="h4 m-b-0"> Alunos</div>
+                            <small class="text-muted text-uppercase font-weight-bold"><span id="qty-std">20</span> matriculados</small>
+                            <progress class="progress progress-xs progress-info m-t-1 m-b-0" value="45" max="100">45%</progress>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-md-3">
+                    <div class="card" id="turma">
+                        <div class="card-block">
+                            <div class="h1 text-muted text-xs-right m-b-2">
+                                <i class="fa fa-percent fa-lg m-t-2"></i>
+                            </div>
+                            <div class="h4 m-b-0">Percentual de erro<span id="disc-end"></span></div>
+                            <small class="text-muted text-uppercase font-weight-bold">20%</small>
+                            <progress class="progress progress-xs progress-warning m-t-1 m-b-0" value="20" max="100">20%</progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <nav class="navbar navbar-dark bg-inverse">
               <div class="nav navbar-nav">
 
@@ -192,224 +220,99 @@
                                          <thead>
                                              <tr>
                                                  <th>Aluno</th>
-                                                 <th>Último acesso</th>
-                                                 <th>Média</th>
-                                                 <th>Indicadores</th>
+                                                 <th>Classificação atual</th>
+                                                 <th>Classificação prevista pelo modelo</th>
                                              </tr>
                                          </thead>
                                          <tbody>
                                              <tr class="success">
                                                  <td>André Raul Farias</td>
-                                                 <td>05/12/2016 19:30</td>
-                                                 <td>6.0</td>
+
+                                                 <td>
+                                                       <span class="tag tag-warning">Atenção</span>
+                                                 </td>
                                                  <td>
                                                      <span class="tag tag-danger">Evasão</span>
                                                  </td>
                                              </tr>
                                              <tr class="danger warning">
                                                  <td>Anna Manuela Santana</td>
-                                                 <td>09/12/2016 07:30</td>
-                                                 <td>4.2</td>
+
                                                  <td>
                                                      <span class="tag tag-danger">Evasão</span>
                                                  </td>
-                                             </tr>
-                                             <tr class="primary">
-                                                 <td>Bruno Rafael Tavares</td>
-                                                 <td>11/12/2016 12:22</td>
-                                                 <td>7.9</td>
-                                                 <td>
-                                                     <span class="tag tag-primary">Comportamento atípico</span>
-                                                 </td>
-                                             </tr>
-                                             <tr class="primary warning">
-                                                 <td>Carlos Henrique</td>
-                                                 <td>05/12/2016 22:41</td>
-                                                 <td>0</td>
                                                  <td>
                                                      <span class="tag tag-warning">Atenção</span>
                                                  </td>
                                              </tr>
+                                             <tr class="primary">
+                                                 <td>Bruno Rafael Tavares</td>
+                                                 <td>
+
+                                                 </td>
+                                                 <td>
+                                                    <span class="tag tag-danger">Evasão</span>
+                                                 </td>
+                                             </tr>
+                                             <tr class="primary warning">
+                                                 <td>Carlos Henrique</td>
+                                                 <td>
+                                                   <span class="tag tag-warning">Atenção</span>
+
+                                                 </td>
+                                                 <td>
+                                                      <span class="tag tag-primary">Comportamento atípico</span>
+                                                 </td>
+                                             </tr>
                                              <tr class="success">
                                                  <td>Camilla Souza</td>
-                                                 <td>05/12/2016 08:00</td>
-                                                 <td>5.6</td>
+                                                 <td>
+                                                     <span class="tag tag-danger">Evasão</span>
+                                                 </td>
                                                  <td>
                                                  </td>
                                              </tr>
                                              <tr class="success">
                                                  <td>Dário Cunha</td>
-                                                 <td>03/01/2017 08:11</td>
-                                                 <td>9.6</td>
+                                                 <td>
+                                                    <span class="tag tag-primary">Comportamento atípico</span>
+                                                 </td>
+                                                 <td>
+                                                  <span class="tag tag-warning">Atenção</span>
+                                                 </td>
+                                             </tr>
+                                             <tr class="success">
+                                                 <td>Dário Cunha</td>
+                                                 <td>
+                                                     <span class="tag tag-warning">Atenção</span>
+                                                 </td>
                                                  <td>
                                                    <span class="tag tag-primary">Comportamento atípico</span>
                                                  </td>
                                              </tr>
-                                         </tbody>
-                                     </table>
+                                             <tr class="success">
+                                                 <td>Dário Cunha</td>
+                                                 <td>
+                                                       <span class="tag tag-warning">Atenção</span>
 
-                                     <table class="table table-bordered table-striped table-condensed" id="table-2" style="display:none;">
-                                         <thead>
-                                             <tr>
-                                                 <th>Aluno</th>
-                                                 <th>Último acesso</th>
-                                                 <th>Média</th>
-                                                 <th>Indicadores</th>
-                                             </tr>
-                                         </thead>
-                                         <tbody>
-                                             <tr>
-                                                 <td>Daniel Vilas-Boas</td>
-                                                 <td>05/12/2016 19:30</td>
-                                                 <td>7.0</td>
+                                                 </td>
                                                  <td>
+                                                  <span class="tag tag-danger">Evasão</span>
                                                  </td>
                                              </tr>
-                                             <tr>
-                                                 <td>Eliana Silva</td>
-                                                 <td>09/12/2016 07:30</td>
-                                                 <td>4.1</td>
-                                                 <td>
-                                                     <span class="tag tag-danger">Evasão</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Fernando Miguel</td>
-                                                 <td>11/12/2016 12:22</td>
-                                                 <td>1.2</td>
-                                                 <td>
-                                                     <span class="tag tag-primary">Comportamento atípico</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Felipe Souza Filho</td>
-                                                 <td>05/12/2016 22:41</td>
-                                                 <td>5.9</td>
-                                                 <td>
-                                                     <span class="tag tag-warning">Atenção</span>
-                                                      <span class="tag tag-primary">Comportamento atípico</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Geraldo Astolfo</td>
-                                                 <td>05/12/2016 08:00</td>
-                                                 <td>8.0</td>
-                                                 <td>
-                                                 </td>
-                                             </tr>
-                                         </tbody>
-                                     </table>
+                                             <tr class="success">
+                                                 <td>Dário Cunha</td>
+                                                 <td> <span class="tag tag-primary">Comportamento atípico</span>
 
-                                     <table class="table table-bordered table-striped table-condensed" id="table-3" style="display:none;">
-                                         <thead>
-                                             <tr>
-                                                 <th>Aluno</th>
-                                                 <th>Último acesso</th>
-                                                 <th>Média</th>
-                                                 <th>Indicadores</th>
-                                             </tr>
-                                         </thead>
-                                         <tbody>
-                                             <tr>
-                                                 <td>Homer simpson</td>
-                                                 <td>05/12/2016 19:30</td>
-                                                 <td>9.0</td>
-                                                 <td>
-                                                     <span class="tag tag-success">Regular</span>
                                                  </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Igor Pedrosa</td>
-                                                 <td>09/12/2016 07:30</td>
-                                                 <td>0</td>
                                                  <td>
-                                                     <span class="tag tag-danger">Evasão</span>
-                                                     <span class="tag tag-warning">Atenção</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>João Carlos Fonseca</td>
-                                                 <td>11/12/2016 12:22</td>
-                                                 <td>4.4</td>
-                                                 <td>
-                                                     <span class="tag tag-primary">Comportamento atípico</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>José Araújo</td>
-                                                 <td>05/12/2016 22:41</td>
-                                                 <td>5.5</td>
-                                                 <td>
-                                                     <span class="tag tag-warning">Atenção</span>
-                                                      <span class="tag tag-primary">Comportamento atípico</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Lenine Fraga</td>
-                                                 <td>05/12/2016 08:00</td>
-                                                 <td>7.3</td>
-                                                 <td>
-                                                     <span class="tag tag-success">Regular</span>
+                                                
                                                  </td>
                                              </tr>
                                          </tbody>
                                      </table>
 
 
-                                     <table class="table table-bordered table-striped table-condensed" id="table-4" style="display:none;">
-                                         <thead>
-                                             <tr>
-                                                 <th>Aluno</th>
-                                                 <th>Último acesso</th>
-                                                 <th>Média</th>
-                                                 <th>Indicadores</th>
-                                             </tr>
-                                         </thead>
-                                         <tbody>
-                                             <tr>
-                                                 <td>Maria da Rocha</td>
-                                                 <td>05/12/2016 19:30</td>
-                                                 <td>8.2</td>
-                                                 <td>
-                                                     <span class="tag tag-success">Regular</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Marta Camelo</td>
-                                                 <td>09/12/2016 07:30</td>
-                                                 <td>1.1</td>
-                                                 <td>
-                                                     <span class="tag tag-danger">Evasão</span>
-                                                     <span class="tag tag-warning">Atenção</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Miguel Henrique Souza</td>
-                                                 <td>11/12/2016 12:22</td>
-                                                 <td>8.2</td>
-                                                 <td>
-                                                     <span class="tag tag-primary">Comportamento atípico</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Nara Maria Wanderley</td>
-                                                 <td>05/12/2016 22:41</td>
-                                                 <td>4.7</td>
-                                                 <td>
-                                                     <span class="tag tag-warning">Atenção</span>
-                                                      <span class="tag tag-primary">Comportamento atípico</span>
-                                                 </td>
-                                             </tr>
-                                             <tr>
-                                                 <td>Otávio Carapuceiro</td>
-                                                 <td>05/12/2016 08:00</td>
-                                                 <td>6.5</td>
-                                                 <td>
-                                                     <span class="tag tag-success">Regular</span>
-                                                 </td>
-                                             </tr>
-                                         </tbody>
-                                     </table>
                                      <nav>
                                          <ul class="pagination">
                                              <li class="page-item active" onclick="showTable(1)">
@@ -419,11 +322,6 @@
                                              <li class="page-item" onclick="showTable(3)"><a style="color:#167495" class="page-link">3</a></li>
                                              <li class="page-item" onclick="showTable(4)"><a style="color:#167495" class="page-link" >4</a></li>
                                          </ul>
-
-                                           <p style="color:black;display: inline; position:relative;right:-33em;"> (*) Esse modelo é usado para prever a evolução dos alunos na página de acompanhamento</p>
-                                           <a data-remodal-target="modal">
-                                         <button type="button" id="classificar"  style="float:right;" class="btn btn-success btn-lg"> <i class="fa fa-tree"></i>&nbsp;Gerar modelo de classificação *   </button>
-                                       </a>
 
                                      </nav>
                                  </div>

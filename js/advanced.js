@@ -32,3 +32,14 @@ $(".switch-input").change(function(){
   }
 
 });
+
+var myFunction = function(){
+  $(".loader").fadeIn('slow');
+  $(".generate-model").hide();
+  $(".description").fadeOut('slow');
+  setTimeout(function(){
+      $(".loader").fadeOut('slow');
+      $(".generate-model").fadeIn('slow');
+
+  },2000);
+};

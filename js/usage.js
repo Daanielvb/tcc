@@ -3,7 +3,8 @@
 		  $('input[type=radio][name=inlineRadioOptions]').change(function() {
 						//changeLabels($(this).data().name);
 						var currentFilter = $(this).data().name;
-						$( ".card-header h5" ).text(currentFilter);
+
+						$( "#current-tittle" ).text(currentFilter);
 						$(".current-attr").text(currentFilter);
 						boxChart.setTitle({text: currentFilter});
 
@@ -136,7 +137,7 @@
 				                data : [40,25,8,32,34,88]
 				            },
 				            {
-				                label: 'Aluno',
+				                label: 'João',
 				                backgroundColor : 'rgba(151,187,205,0.2)',
 				                borderColor : 'rgba(151,187,205,1)',
 				                pointBackgroundColor : 'rgba(151,187,205,1)',

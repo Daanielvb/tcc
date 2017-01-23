@@ -7785,6 +7785,15 @@ table {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+#myLoader {
+  left: 0%; }
+
+#myLoader:after {
+  background: white; }
+
+.generate-model {
+  display: none; }
+
 #classification-content {
   display: none; }
 

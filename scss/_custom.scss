@@ -124,6 +124,18 @@ table {
   }
 }
 
+#myLoader{
+	left:0%;
+}
+
+#myLoader:after{
+	background:white;
+}
+
+.generate-model{
+	display:none;
+}
+
 #classification-content{
 	display:none;
 }
